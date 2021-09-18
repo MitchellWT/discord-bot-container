@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+        discord_bot:
+                container_name: discord-bot
+                image: python_discord:latest
+                restart: unless-stopped
+                volumes:
+                  - ./bot:/usr/src/app/bot
